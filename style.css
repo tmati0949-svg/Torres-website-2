@@ -1255,3 +1255,72 @@ img, video {
     padding-right:1rem;
   }
 }
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  /* Hero */
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* Servicios */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Oficinas */
+  .offices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .office-image,
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Contacto */
+  .commercial-form-row,
+  .cv-form-row {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
