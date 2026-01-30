@@ -1323,4 +1323,113 @@ img, video {
   }
 
 }
+/* Botón de prueba - navegación a Quiénes Somos */
+.btn-prueba {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background-color: #0b4c8c;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+/* =============================== */
+/* Botón flotante de WhatsApp      */
+/* =============================== */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 58px;
+  height: 58px;
+  background: #25d366;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
 
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.whatsapp-float-icon {
+  width: 30px;
+  height: 30px;
+}
+/* =============================== */
+/* ARREGLO FOOTER: no se pisa texto */
+/* =============================== */
+
+/* Permite que emails/textos largos se corten y no invadan otra columna */
+.footer-contact-item span {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* (Opcional pero recomendado) evita problemas de ancho dentro de columnas */
+.footer-column {
+  min-width: 0;
+}
+/* =============================== */
+/* Oficinas: Foto / Mapa (cambia la vista) */
+/* =============================== */
+
+.office-toggle {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.office-toggle-btn {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border: 1px solid rgb(209 213 219 / 1);
+  border-radius: 999px;
+  background: #fff;
+  color: rgb(11 76 140 / 1);
+  font-weight: 600;
+}
+
+.office-toggle-btn:hover {
+  border-color: rgb(22 78 99 / 1);
+  color: rgb(22 78 99 / 1);
+}
+
+.office-toggle-btn.is-active {
+  background: rgb(11 76 140 / 1);
+  border-color: rgb(11 76 140 / 1);
+  color: #fff;
+}
+
+/* Ocultamos/mostramos Foto o Mapa */
+.office-view {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.25s ease;
+}
+
+.office-card[data-office-view="foto"] .office-view--foto {
+  max-height: 250px;
+  opacity: 1;
+}
+
+.office-card[data-office-view="Ubicación"] .office-view--ubicación {
+  max-height: 250px;
+  opacity: 1;
+}
+
+/* El mapa embebido prolijo y con mismo alto que la foto */
+.office-map {
+  width: 100%;
+  height: 160px;
+  border: 0;
+  border-top: 1px solid rgb(229 231 235 / 1);
+}
