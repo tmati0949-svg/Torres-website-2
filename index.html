@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- =============================== -->
+    <!-- CABEZA DEL SITIO (lo que NO se ve) -->
+    <!-- =============================== -->
     <title>Servicios de Comercio Internacional y Transporte Aduanero</title>
 
     <meta charset="utf-8" />
@@ -8,6 +11,7 @@
     <meta name="robots" content="index,follow" />
     <meta name="generator" content="GrapesJS Studio" />
 
+    <!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
@@ -15,17 +19,23 @@
       rel="stylesheet"
     />
 
+    <!-- Estilos -->
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body class="gjs-t-body body">
+    <!-- ================================================= -->
+    <!-- ARRIBA DE TODO: LOGO + MENÚ + BOTONES (HEADER)     -->
+    <!-- ================================================= -->
     <header class="header">
       <div id="inz5y" class="header-container">
+        <!-- Logo -->
         <img
           src="https://cdn.grapesjs.com/workspaces/cmkpnswl66qmiybccijljkivy/assets/1eaf362f-31bd-432b-99e3-0d75da8fe2c0__chatgpt-image-22-ene-2026-134505.png"
           id="i45iq5"
         />
 
+        <!-- Nombre de la empresa -->
         <a href="#" class="group brand-link">
           <div class="brand-text">
             <span id="ipv0d" class="brand-name">
@@ -37,6 +47,7 @@
           </div>
         </a>
 
+        <!-- Menú -->
         <nav class="navbar">
           <a href="#servicios" class="gjs-t-link nav-link">Servicios</a>
 
@@ -50,6 +61,7 @@
             Quiénes Somos
           </a>
 
+          <!-- Botones de acción (arriba a la derecha) -->
           <div class="header-actions">
             <a href="#contacto" class="gjs-t-button primary-action">
               Solicitar información
@@ -60,8 +72,12 @@
       </div>
     </header>
 
+    <!-- ====================================== -->
+    <!-- PRIMER PANTALLAZO (PORTADA / HERO)      -->
+    <!-- ====================================== -->
     <section id="i29nl" class="hero-section">
       <div id="i8k5n" class="hero-container">
+        <!-- Lado izquierdo: título + texto + botón -->
         <div class="hero-content">
           <h1 id="icqr8" class="gjs-t-h1 hero-title">
             Servicios de Comercio Internacional y Transporte Aduanero
@@ -84,6 +100,7 @@
             </a>
           </div>
 
+          <!-- “Sellitos” de confianza -->
           <div class="hero-trust-indicators">
             <div class="trust-item">
               <img
@@ -114,6 +131,7 @@
           </div>
         </div>
 
+        <!-- Lado derecho: imagen grande -->
         <div class="hero-media">
           <img
             alt="Logística internacional"
@@ -122,6 +140,7 @@
           />
           <div class="hero-image-overlay"></div>
 
+          <!-- Etiqueta sobre la imagen -->
           <div class="hero-badge">
             <img
               alt="Puerta a puerta"
@@ -134,6 +153,9 @@
       </div>
     </section>
 
+    <!-- ====================================== -->
+    <!-- SERVICIOS (las tarjetitas de servicios) -->
+    <!-- ====================================== -->
     <section id="servicios" class="services-section">
       <div class="services-container">
         <div class="services-header">
@@ -224,146 +246,200 @@
       </div>
     </section>
 
-    <section id="oficinas" class="offices-section">
-      <div class="offices-container" id="ithav9">
-        <div class="offices-header">
-          <h2 class="gjs-t-h2 section-title">Nuestras Oficinas</h2>
-          <span class="section-note">
-            Presencia regional para una atención cercana
-          </span>
+   <section id="oficinas" class="offices-section">
+  <div class="offices-container" id="ithav9">
+    <div class="offices-header">
+      <h2 class="gjs-t-h2 section-title">Nuestras Oficinas</h2>
+      <span class="section-note">Presencia regional para una atención cercana</span>
+    </div>
+
+    <div class="offices-grid">
+      <!-- ===== Oficina 1 ===== -->
+      <article class="gjs-t-border office-card" data-office-view="foto">
+        <div class="office-content">
+          <div class="office-header">
+            <img
+              alt="Ubicación"
+              src="https://api.iconify.design/lucide-map-pin.svg?color=%231F2937"
+              class="office-icon"
+            />
+            <h3 class="office-title" id="ikkfsk">Mendoza, Guaymallen</h3>
+          </div>
+
+          <div class="office-phone">
+            <img
+              alt="Teléfono"
+              src="https://api.iconify.design/lucide-phone.svg?color=%231F2937"
+              class="phone-icon"
+            />
+            <span>+54 11 5555-1234</span>
+          </div>
+
+          <div class="office-email">
+            <img
+              alt="Email"
+              src="https://api.iconify.design/lucide-mail.svg?color=%231F2937"
+              class="email-icon"
+            />
+            <span>ba@globaltradelogistics.com</span>
+          </div>
+
+          <!-- Botoncitos Foto / Ubicación -->
+          <div class="office-toggle">
+            <button type="button" class="office-toggle-btn is-active" data-office-view="foto">
+              Foto
+            </button>
+            <button type="button" class="office-toggle-btn" data-office-view="Ubicación">
+              Ubicación
+            </button>
+          </div>
         </div>
 
-        <div class="offices-grid">
-          <article class="gjs-t-border office-card">
-            <div class="office-content">
-              <div class="office-header">
-                <img
-                  alt="Ubicación"
-                  src="https://api.iconify.design/lucide-map-pin.svg?color=%231F2937"
-                  class="office-icon"
-                />
-                <h3 class="office-title" id="ikkfsk">Mendoza, Guaymallen</h3>
-              </div>
+        <!-- FOTO -->
+        <img
+          alt="Oficina Mendoza"
+          loading="lazy"
+          src="Fotos/torres.ypf.png"
+          class="office-image office-view office-view--foto"
+        />
 
-              <div class="office-phone">
-                <img
-                  alt="Teléfono"
-                  src="https://api.iconify.design/lucide-phone.svg?color=%231F2937"
-                  class="phone-icon"
-                />
-                <span>+54 11 5555-1234</span>
-              </div>
+        <!-- MAPA -->
+        <iframe
+          class="office-map office-view office-view--ubicación"
+          src="https://www.google.com/maps?q=Mendoza%2C%20Guaymall%C3%A9n&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </article>
 
-              <div class="office-email">
-                <img
-                  alt="Email"
-                  src="https://api.iconify.design/lucide-mail.svg?color=%231F2937"
-                  class="email-icon"
-                />
-                <span>ba@globaltradelogistics.com</span>
-              </div>
-            </div>
-
+      <!-- ===== Oficina 2 ===== -->
+      <article class="gjs-t-border office-card" data-office-view="foto">
+        <div class="office-content">
+          <div class="office-header">
             <img
-              alt="Oficina Mendoza"
-              loading="lazy"
-              src="Fotos/torres.ypf.png"
-              class="office-image"
+              alt="Ubicación"
+              src="https://api.iconify.design/lucide-map-pin.svg?color=%231F2937"
+              class="office-icon"
             />
-          </article>
+            <h3 class="office-title">Santiago, Chile</h3>
+          </div>
 
-          <article class="gjs-t-border office-card">
-            <div class="office-content">
-              <div class="office-header">
-                <img
-                  alt="Ubicación"
-                  src="https://api.iconify.design/lucide-map-pin.svg?color=%231F2937"
-                  class="office-icon"
-                />
-                <h3 class="office-title">Santiago, Chile</h3>
-              </div>
-
-              <div class="office-phone">
-                <img
-                  alt="Teléfono"
-                  src="https://api.iconify.design/lucide-phone.svg?color=%231F2937"
-                  class="phone-icon"
-                />
-                <span>+56 2 2222-5678</span>
-              </div>
-
-              <div class="office-email">
-                <img
-                  alt="Email"
-                  src="https://api.iconify.design/lucide-mail.svg?color=%231F2937"
-                  class="email-icon"
-                />
-                <span>stgo@globaltradelogistics.com</span>
-              </div>
-            </div>
-
+          <div class="office-phone">
             <img
-              alt="Oficina Santiago"
-              loading="lazy"
-              src="https://app.grapesjs.com/api/assets/random-image?query=%22office%20modern%22&amp;w=900&amp;h=160"
-              class="office-image"
+              alt="Teléfono"
+              src="https://api.iconify.design/lucide-phone.svg?color=%231F2937"
+              class="phone-icon"
             />
-          </article>
+            <span>+56 2 2222-5678</span>
+          </div>
 
-          <article class="gjs-t-border office-card">
-            <div class="office-content">
-              <div class="office-header">
-                <img
-                  alt="Ubicación"
-                  src="https://api.iconify.design/lucide-map-pin.svg?color=%231F2937"
-                  class="office-icon"
-                />
-                <h3 class="office-title">Uspallata, Mendoza</h3>
-              </div>
-
-              <div class="office-phone">
-                <img
-                  alt="Teléfono"
-                  src="https://api.iconify.design/lucide-phone.svg?color=%231F2937"
-                  class="phone-icon"
-                />
-                <span>+34 91 333-7890</span>
-              </div>
-
-              <div class="office-email">
-                <img
-                  alt="Email"
-                  src="https://api.iconify.design/lucide-mail.svg?color=%231F2937"
-                  class="email-icon"
-                />
-                <span>mad@globaltradelogistics.com</span>
-              </div>
-            </div>
-
+          <div class="office-email">
             <img
-              alt="Oficina Uspallata"
-              loading="lazy"
-              src="https://app.grapesjs.com/api/assets/random-image?query=%22corporate%20office%22&amp;w=900&amp;h=160"
-              class="office-image"
+              alt="Email"
+              src="https://api.iconify.design/lucide-mail.svg?color=%231F2937"
+              class="email-icon"
             />
+            <span>stgo@globaltradelogistics.com</span>
+          </div>
 
-            <!-- ✅ IFRAME ARREGLADO: antes estaba roto -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d210.09077443983062!2d-69.37069176160396!3d-32.594125387157504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1769125301054!5m2!1ses!2sar"
-              width="600"
-              height="450"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </article>
+          <div class="office-toggle">
+            <button type="button" class="office-toggle-btn is-active" data-office-view="foto">
+              Foto
+            </button>
+            <button type="button" class="office-toggle-btn" data-office-view="Ubicación">
+              Ubicación
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
 
+        <!-- FOTO -->
+        <img
+          alt="Oficina Santiago"
+          loading="lazy"
+          src="https://app.grapesjs.com/api/assets/random-image?query=%22office%20modern%22&amp;w=900&amp;h=160"
+          class="office-image office-view office-view--foto"
+        />
+
+        <!-- MAPA -->
+        <iframe
+          class="office-map office-view office-view--ubicación"
+          src="https://www.google.com/maps?q=Santiago%2C%20Chile&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </article>
+
+      <!-- ===== Oficina 3 ===== -->
+      <article class="gjs-t-border office-card" data-office-view="foto">
+        <div class="office-content">
+          <div class="office-header">
+            <img
+              alt="Ubicación"
+              src="https://api.iconify.design/lucide-map-pin.svg?color=%231F2937"
+              class="office-icon"
+            />
+            <h3 class="office-title">Uspallata, Mendoza</h3>
+          </div>
+
+          <div class="office-phone">
+            <img
+              alt="Teléfono"
+              src="https://api.iconify.design/lucide-phone.svg?color=%231F2937"
+              class="phone-icon"
+            />
+            <span>+34 91 333-7890</span>
+          </div>
+
+          <div class="office-email">
+            <img
+              alt="Email"
+              src="https://api.iconify.design/lucide-mail.svg?color=%231F2937"
+              class="email-icon"
+            />
+            <span>mad@globaltradelogistics.com</span>
+          </div>
+
+          <div class="office-toggle">
+            <button type="button" class="office-toggle-btn is-active" data-office-view="foto">
+              Foto
+            </button>
+            <button type="button" class="office-toggle-btn" data-office-view="Ubicación">
+              Ubicación
+            </button>
+          </div>
+        </div>
+
+        <!-- FOTO -->
+        <img
+          alt="Oficina Uspallata"
+          loading="lazy"
+          src="https://app.grapesjs.com/api/assets/random-image?query=%22corporate%20office%22&amp;w=900&amp;h=160"
+          class="office-image office-view office-view--foto"
+        />
+
+        <!-- MAPA -->
+        <iframe
+          class="office-map office-view office-view--ubicación"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d210.09077443983062!2d-69.37069176160396!3d-32.594125387157504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1769125301054!5m2!1ses!2sar"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ====================================== -->
+    <!-- CONTACTO (formulario para clientes)     -->
+    <!-- ====================================== -->
     <section id="contacto" class="contact-section">
       <div class="contact-container" id="icr53h">
+        <!-- Lado izquierdo: contacto comercial -->
         <div class="contact-left">
           <h2 class="gjs-t-h2 contact-title">Contacto Comercial</h2>
 
@@ -458,6 +534,7 @@
           </form>
         </div>
 
+        <!-- Lado derecho: enviar CV -->
         <div id="cv" class="cv-right">
           <h2 class="gjs-t-h2 cv-title" id="ik9jbj">Enviar CV</h2>
 
@@ -565,6 +642,9 @@
       </div>
     </section>
 
+    <!-- ====================================== -->
+    <!-- QUIÉNES SOMOS (historia + imagen)       -->
+    <!-- ====================================== -->
     <section id="quienes-somos" class="about-section">
       <div class="about-container">
         <div class="about-content">
@@ -620,6 +700,9 @@
       </div>
     </section>
 
+    <!-- ====================================== -->
+    <!-- PIE DE PÁGINA (info grande)             -->
+    <!-- ====================================== -->
     <div class="footer-container" id="i0evne">
       <img
         src="https://cdn.grapesjs.com/workspaces/cmkpnswl66qmiybccijljkivy/assets/1eaf362f-31bd-432b-99e3-0d75da8fe2c0__chatgpt-image-22-ene-2026-134505.png"
@@ -682,6 +765,9 @@
       </div>
     </div>
 
+    <!-- ====================================== -->
+    <!-- ÚLTIMA TIRITITA DE ABAJO (copyright/redes) -->
+    <!-- ====================================== -->
     <footer class="footer">
       <div class="footer-bottom">
         <div class="footer-bottom-container">
@@ -708,20 +794,36 @@
         </div>
       </div>
     </footer>
-    <button
-      onclick="window.open('https://wa.me/5492612091142', '_blank')"
-      style="
-        padding: 15px 25px;
-        font-size: 16px;
-        background-color: #25D366;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        margin: 20px;
-      "
-    >
-      Probar WhatsApp
-    </button>
+    <!-- Botón flotante de WhatsApp -->
+<a
+  href="https://wa.me/5492612091142"
+  target="_blank"
+  rel="noopener"
+  class="whatsapp-float"
+  aria-label="Chatear por WhatsApp"
+>
+  <img
+    src="https://api.iconify.design/mdi-whatsapp.svg?color=white"
+    alt=""
+    class="whatsapp-float-icon"
+  />
+</a>
+<script>
+  document.addEventListener("click", function (e) {
+    const btn = e.target.closest(".office-toggle-btn");
+    if (!btn) return;
+
+    const card = btn.closest(".office-card");
+    if (!card) return;
+
+    const view = btn.getAttribute("data-office-view");
+    card.setAttribute("data-office-view", view);
+
+    card.querySelectorAll(".office-toggle-btn").forEach((b) => {
+      b.classList.toggle("is-active", b === btn);
+    });
+  });
+</script>
+
   </body>
 </html>
